@@ -16,6 +16,10 @@ public class Member {
         setJenisPaket(jenisPaket);
     }
 
+    public Member(String nama, String noTelepon, String tanggalDaftar) {
+    this(nama, noTelepon, tanggalDaftar, DEFAULT_JENIS_PAKET);
+}
+
     public String getNama() { return nama; }
     public void setNama(String nama) {
         if (nama != null && !nama.trim().isEmpty()) {
